@@ -26,6 +26,9 @@ convert.toFile("output.jpeg");
 ### 2. Convert from Word document URL to base 64 JPEG string
 
 ```csharp
+MsWordToImageConvert convert = new MsWordToImageConvert(apiUser,apiKey);
+convert.fromURL("http://msword2image.com/docs/demo.docx");
+string base64EncodedJPEG = convert.toBase46EncodedString();
 ```
 
 ### 3. Convert from Word file to JPEG file
