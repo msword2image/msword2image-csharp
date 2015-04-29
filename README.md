@@ -10,6 +10,8 @@ Note that you can try this out by visting [msword2image.com](http://msword2image
 
 ## Installation
 
+You can simply download [MsWordToImage.dll](https://github.com/msword2image/msword2image-csharp/raw/master/MsWordToImage/pack/MsWordToImage.dll) that includes all dependencies and referene this DLL.
+
 ## Usage
 
 ### 1. Convert from Word document URL to JPEG file
