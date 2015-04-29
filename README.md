@@ -52,12 +52,18 @@ string base64EncodedJPEG = convert.toBase46EncodedString();
 ### 5. Convert from Word file to base 64 encoded GIF string
 
 ```csharp
+MsWordToImageConvert convert = new MsWordToImageConvert(apiUser,apiKey);
+convert.fromFile("demo.doc");
+string base64EncodedGIF = convert.toBase46EncodedString(OutputImageFormat.GIF);
 // Please make sure input file is readable by your process.
 ```
 
 ### 6. Convert from Word file to base 64 encoded PNG string
 
 ```csharp
+MsWordToImageConvert convert = new MsWordToImageConvert(apiUser,apiKey);
+convert.fromFile("demo.doc");
+string base64EncodedGIF = convert.toBase46EncodedString(OutputImageFormat.PNG);
 // Please make sure input file is readable by your process.
 ```
 
