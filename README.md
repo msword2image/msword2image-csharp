@@ -17,6 +17,9 @@ You can simply download [MsWordToImage.dll](https://github.com/msword2image/mswo
 ### 1. Convert from Word document URL to JPEG file
 
 ```csharp
+MsWordToImageConvert convert = new MsWordToImageConvert(apiUser, apiKey);
+convert.fromURL("http://msword2image.com/docs/demo.docx");
+convert.toFile("output.jpeg");
 // Please make sure output file is writable by your PHP process.
 ```
 
