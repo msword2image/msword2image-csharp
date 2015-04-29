@@ -20,7 +20,7 @@ You can simply download [MsWordToImage.dll](https://github.com/msword2image/mswo
 MsWordToImageConvert convert = new MsWordToImageConvert(apiUser, apiKey);
 convert.fromURL("http://msword2image.com/docs/demo.docx");
 convert.toFile("output.jpeg");
-// Please make sure output file is writable by your PHP process.
+// Please make sure output file is writable by your process.
 ```
 
 ### 2. Convert from Word document URL to base 64 JPEG string
@@ -34,25 +34,28 @@ string base64EncodedJPEG = convert.toBase46EncodedString();
 ### 3. Convert from Word file to JPEG file
 
 ```csharp
-// Please make sure output file is writable and input file is readable by your PHP process.
+MsWordToImageConvert convert = new MsWordToImageConvert(apiUser,apiKey);
+convert.fromFile("demo.doc");
+convert.toFile("output.jpeg");
+// Please make sure output file is writable and input file is readable by your process.
 ```
 
 ### 4. Convert from Word file to base 64 encoded JPEG string
 
 ```csharp
-// Please make sure input file is readable by your PHP process.
+// Please make sure input file is readable by your process.
 ```
 
 ### 5. Convert from Word file to base 64 encoded GIF string
 
 ```csharp
-// Please make sure input file is readable by your PHP process.
+// Please make sure input file is readable by your process.
 ```
 
 ### 6. Convert from Word file to base 64 encoded PNG string
 
 ```csharp
-// Please make sure input file is readable by your PHP process.
+// Please make sure input file is readable by your process.
 ```
 
 ## Supported file formats
