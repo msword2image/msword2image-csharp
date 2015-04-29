@@ -1,4 +1,4 @@
-# MSWord2Image-C\#
+# MSWord2Image-C&#35;
 
 This library allows you to quickly convert Microsoft Word documents to image through [msword2image.com](http://msword2image.com) using C# for free!
 
