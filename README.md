@@ -43,6 +43,9 @@ convert.toFile("output.jpeg");
 ### 4. Convert from Word file to base 64 encoded JPEG string
 
 ```csharp
+MsWordToImageConvert convert = new MsWordToImageConvert(apiUser,apiKey);
+convert.fromFile("demo.doc");
+string base64EncodedJPEG = convert.toBase46EncodedString();
 // Please make sure input file is readable by your process.
 ```
 
