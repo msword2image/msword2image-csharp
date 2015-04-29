@@ -334,7 +334,7 @@
                 using (var formData = new MultipartFormDataContent())
                 {
                     HttpContent fileStreamContent = new StreamContent(new FileStream(this.getInputFile().FullName, FileMode.Open));
-                    formData.Add(fileStreamContent, "file_contents");
+                    formData.Add(fileStreamContent, "file_contents", "file_contents");
 
                     var response = client.PostAsync(this.constructMsWordToImageAddress(new Dictionary<string, string>()), formData).Result;
                     if (!response.IsSuccessStatusCode)
